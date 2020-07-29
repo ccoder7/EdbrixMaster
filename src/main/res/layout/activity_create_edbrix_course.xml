@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    android:orientation="vertical"
+    tools:context="CreateEdbrixCourseActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:weightSum="1"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.09"
+                android:layout_marginEnd="@dimen/app_big_margin"
+                android:layout_marginRight="@dimen/app_big_margin"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="@dimen/app_big_padding"
+                    android:paddingRight="@dimen/app_big_padding"
+                    android:text="@string/create_resource"
+                    android:textColor="@color/ColorsWhite"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateEdbrixCourseActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnCreateCourse"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtCourseTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/app_normal_margin"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:layout_marginTop="@dimen/app_big_margin"
+                    android:background="@drawable/black_border"
+                    android:fontFamily="@string/futura_book_bt_ttf"
+                    android:hint="@string/class_title"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/app_normal_padding"
+                    android:textColor="@color/MainTextColor"
+                    android:textColorHint="@color/SubTextColor"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/app_normal_margin"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:layout_marginTop="@dimen/app_big_margin"
+                    android:background="@drawable/black_border"
+                    android:fontFamily="@string/futura_book_bt_ttf"
+                    android:hint="@string/subject"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/app_normal_padding"
+                    android:textColor="@color/MainTextColor"
+                    android:textColorHint="@color/SubTextColor"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/app_normal_margin"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:layout_marginTop="@dimen/app_big_margin"
+                    android:background="@drawable/black_border"
+                    android:fontFamily="@string/futura_book_bt_ttf"
+                    android:hint="@string/board_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/app_normal_padding"
+                    android:visibility="gone"
+                    android:textColor="@color/MainTextColor"
+                    android:textColorHint="@color/SubTextColor"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edtContentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/app_normal_margin"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:layout_marginTop="@dimen/app_big_margin"
+                    android:background="@drawable/black_border"
+                    android:fontFamily="@string/futura_book_bt_ttf"
+                    android:hint="@string/content_title"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/app_normal_padding"
+                    android:textColor="@color/MainTextColor"
+                    android:textColorHint="@color/SubTextColor"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:fontFamily="@string/futura_book_bt_ttf"
+                    android:padding="@dimen/app_normal_padding"
+                    android:text="Content : "
+                    android:textColor="@color/SubTextColor"
+                    android:textColorHint="@color/ColorPlaceHolder"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtFileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/app_normal_margin"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:drawablePadding="@dimen/app_normal_padding"
+                    android:fontFamily="@string/futura_book_bt_ttf"
+                    android:padding="@dimen/app_normal_padding"
+                    android:textColor="@color/MainTextColor"
+                    android:textColorHint="@color/ColorPlaceHolder"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/app_big_margin"
+                    android:layout_marginRight="@dimen/app_big_margin"
+                    android:gravity="center_vertical|right"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/mProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/app_min_margin"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/app_min_margin"
+                        android:textSize="16dp" />
+
+                </LinearLayout>
+
+
+                <!-- <Spinner
+                     android:id="@+id/sprSubject"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginBottom="@dimen/app_normal_margin"
+                     android:layout_marginLeft="@dimen/app_big_margin"
+                     android:layout_marginRight="@dimen/app_big_margin"
+                     android:layout_marginTop="@dimen/app_big_margin"
+                     android:background="@drawable/black_border"
+                     android:fontFamily="@string/futura_book_bt_ttf"
+                     android:hint="@string/title"
+                     android:imeOptions="actionNext"
+                     android:inputType="textEmailAddress"
+                     android:padding="@dimen/app_normal_padding"
+                     android:textColor="@color/SubTextColor"
+                     android:textColorHint="@color/ColorPlaceHolder"
+                     android:textSize="18sp" />
+
+                 <Spinner
+                     android:id="@+id/sprStandard"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginBottom="@dimen/app_normal_margin"
+                     android:layout_marginLeft="@dimen/app_big_margin"
+                     android:layout_marginRight="@dimen/app_big_margin"
+                     android:layout_marginTop="@dimen/app_big_margin"
+                     android:background="@drawable/black_border"
+                     android:fontFamily="@string/futura_book_bt_ttf"
+                     android:hint="@string/title"
+                     android:imeOptions="actionNext"
+                     android:inputType="textEmailAddress"
+                     android:padding="@dimen/app_normal_padding"
+                     android:textColor="@color/SubTextColor"
+                     android:textColorHint="@color/ColorPlaceHolder"
+                     android:textSize="18sp" />
+
+                 <Spinner
+                     android:id="@+id/sprBoard"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginBottom="@dimen/app_normal_margin"
+                     android:layout_marginLeft="@dimen/app_big_margin"
+                     android:layout_marginRight="@dimen/app_big_margin"
+                     android:layout_marginTop="@dimen/app_big_margin"
+                     android:background="@drawable/black_border"
+                     android:fontFamily="@string/futura_book_bt_ttf"
+                     android:hint="@string/title"
+                     android:imeOptions="actionNext"
+                     android:inputType="textEmailAddress"
+                     android:padding="@dimen/app_normal_padding"
+                     android:textColor="@color/SubTextColor"
+                     android:textColorHint="@color/ColorPlaceHolder"
+                     android:textSize="18sp" />-->
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnCreateCourse"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@color/ColorLogo"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:text="@string/create"
+            android:padding="@dimen/app_min_padding"
+            android:textColor="@color/ColorsWhite"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/org_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/app_min_padding"
+    android:weightSum="3">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/app_min_margin"
+        android:layout_marginRight="@dimen/app_min_margin"
+        android:id="@+id/org_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:contentDescription="Img Org"
+        android:src="@drawable/app_logo_round_new24" />
+
+    <TextView
+        android:id="@+id/org_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2.6"
+        android:maxLines="1"
+        android:padding="@dimen/app_min_padding"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/app_min_margin"
+        android:layout_marginRight="@dimen/app_min_margin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="Img Org"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_weight="0.2"
+        android:src="@drawable/right_arrow" />
+
+</LinearLayout>
+
+    <!-- android:layout_weight="0.2"<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/org_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/app_normal_padding">
+
+        <ImageView
+            android:id="@+id/org_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:contentDescription="Img Org"
+            android:src="@drawable/app_logo_round_new24" />
+
+        <TextView
+            android:id="@+id/org_name"
+            android:layout_width="420dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/org_image"
+            android:layout_toRightOf="@+id/org_image"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:typeface="monospace" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:adjustViewBounds="true"
+            android:contentDescription="Img Org"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/right_arrow" />
+
+    </LinearLayout>-->

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backTextureImgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="matrix"-->
+        <!--android:src="@drawable/round_image_red_whiteborder"-->
+        <!--android:visibility="visible" />-->
+
+
+        <ImageView
+            android:id="@+id/img_scale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.rajasharan.layout.RearrangeableLayout
+            android:id="@+id/rearrangeableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            app:outlineColor="@color/appColor"
+            app:outlineWidth="2dp"
+            app:selectionAlpha="0.5"
+            app:selectionZoom="1.2">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/t10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="@dimen/app_min_padding"
+                android:text=""
+                android:textSize="30sp" />
+
+
+            <!-- <TextView
+                 android:id="@+id/t2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="15dp"
+                 android:background="@android:color/holo_green_light"
+                 android:text="Sample Demo with very large text that will overflow in width"
+                 android:textSize="30sp" />
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/arrow_forward_grey"
+                 android:visibility="visible" />-->
+
+        </com.rajasharan.layout.RearrangeableLayout>
+
+        <TextView
+            android:id="@+id/scannedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_min_margin"
+            android:text=""
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/seekBarSize"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/app_min_margin"
+            android:layout_marginTop="39dp"
+            android:background="@color/ColorBlackTransparent40"
+            android:max="75"
+            android:min="15"
+            android:padding="@dimen/app_normal_padding"
+            android:visibility="gone" />
+
+        <com.edbrix.contentbrix.customview.ShapesDrawingView
+            android:id="@+id/shapeDrawView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <com.edbrix.contentbrix.customview.DrawingOnImageView
+            android:id="@+id/drawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+</LinearLayout>

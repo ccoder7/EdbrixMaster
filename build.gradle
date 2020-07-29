@@ -1,0 +1,194 @@
+import org.apache.commons.io.FileUtils
+import org.apache.commons.io.filefilter.FileFilterUtils
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+
+
+repositories {
+    maven { url 'https://dl.bintray.com/drummer-aidan/maven' }
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://jitpack.io' }
+}
+android {
+
+    /*sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/aidl']
+        }
+    }*/
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'contentbrix'
+            keyPassword 'android'
+            storeFile file('D:\\workspace\\EdbrixMaster\\DeveloperKeyStore\\contentbrix_keystore.jks')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.edbrix.contentbrix"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 58
+        versionName "3.1"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+}
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation files('libs/json_simple-1.1.jar')
+    implementation project(':aFileChooser')
+    implementation project(':ImageGestures')
+    implementation project(':ViewPagerIndicator')
+    implementation project(':DragableViewLibrary')
+    implementation project(':DragDropGrid')
+    implementation project(':UIReferenceImplementation')
+    implementation 'com.google.firebase:firebase-analytics:17.2.3'
+
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
+        transitive = true;
+    }
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.android.volley:volley:1.1.0'
+    //noinspection GradleCompatible
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    //implementation 'com.squareup.picasso:picasso:2.5.0'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+
+
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    //implementation 'com.google.firebase:firebase-auth:12.0.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+
+    implementation 'com.google.android.gms:play-services-drive:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+//    implementation 'com.google.android.gms:play-services:14.0.0'
+
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    implementation 'com.google.android.gms:play-services-cast-framework:18.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.2'
+
+    implementation 'com.afollestad:easyvideoplayer:0.3.0'
+    implementation 'com.dropbox.core:dropbox-core-sdk:2.0.1'
+    implementation 'com.stripe:stripe-android-pay:4.1.5'
+    implementation 'com.stripe:stripe-android:4.1.5'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.4.1'
+    implementation 'com.googlecode.mp4parser:isoparser:1.0.2'
+    implementation 'com.github.douglasjunior:android-simple-tooltip:0.2.2'
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    //noinspection GradleCompatible
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.microsoft.onedrivesdk:onedrive-picker-android:v2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.myscript:iink:1.2.2'
+    implementation 'com.github.vansikrishna:Multimager:1.0.6'
+    implementation 'com.google.android.gms:play-services-wallet:18.0.0'
+    implementation 'com.google.firebase:firebase-iid:20.0.2'
+    implementation 'petrov.kristiyan:colorpicker-library:1.1.10'
+    implementation 'io.agora.rtc:full-sdk:3.0.1'
+    implementation project(path: ':screensharing')
+    implementation project(path: ':libagorartc')
+
+}
+/*
+task DownloadAndExtractAssets(type: Copy) {
+    def sourceUrls = ['https://s3-us-west-2.amazonaws.com/iink/assets/1.2.0/myscript-iink-recognition-diagram.zip',
+                      'https://s3-us-west-2.amazonaws.com/iink/assets/1.2.0/myscript-iink-recognition-raw-content.zip',
+                      'https://s3-us-west-2.amazonaws.com/iink/assets/1.2.0/myscript-iink-recognition-math.zip',
+                      'https://s3-us-west-2.amazonaws.com/iink/assets/1.2.0/myscript-iink-recognition-text-en_US.zip']
+    def temporaryDir = new File(projectDir, "build/assets")
+    def zipDir = new File(temporaryDir, "zips")
+    def targetDir = new File(projectDir, "src/main/assets/")
+    def diagramConf = new File(targetDir, "conf/diagram.conf")
+    def rawContentConf = new File(targetDir, "conf/raw-content.conf")
+    def mathConf = new File(targetDir, "conf/math.conf")
+    def textConf = new File(targetDir, "conf/en_US.conf")
+
+    if (!diagramConf.exists() || !rawContentConf.exists() || !mathConf.exists() || !textConf.exists()) {
+        temporaryDir.deleteOnExit()
+        if (!temporaryDir.isDirectory())
+            temporaryDir.mkdirs()
+
+        if (!zipDir.isDirectory())
+            zipDir.mkdirs()
+
+        sourceUrls.each { sourceUrl ->
+            ant.get(src: sourceUrl, dest: zipDir.getPath())
+        }
+
+        File[] zipFiles = FileUtils.listFiles(zipDir, FileFilterUtils.suffixFileFilter("zip"), FileFilterUtils.trueFileFilter())
+        zipFiles.each { File zipFile ->
+            from zipTree(zipFile)
+            into temporaryDir
+        }
+    }
+}
+
+task CopyAssets(type: Copy, dependsOn: DownloadAndExtractAssets) {
+    def recognitionAssetDir = new File(projectDir, "build/assets/recognition-assets/")
+    def targetDir = new File(projectDir, "src/main/assets/")
+    def diagramConf = new File(targetDir, "conf/diagram.conf")
+    def rawContentConf = new File(targetDir, "conf/raw-content.conf")
+    def mathConf = new File(targetDir, "conf/math.conf")
+    def textConf = new File(targetDir, "conf/en_US.conf")
+
+    if (!diagramConf.exists() || !rawContentConf.exists() || !mathConf.exists() || !textConf.exists()) {
+        println "Copying downloaded assets from $recognitionAssetDir to $targetDir"
+        from recognitionAssetDir
+        into targetDir
+    }
+}
+
+preBuild.dependsOn(CopyAssets)*/
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/blackBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@drawable/round_image_black_whiteborder"
+            android:backgroundTint="@color/ColorsBlack"
+            android:visibility="visible" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/redBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@drawable/round_image_red_whiteborder"
+            android:backgroundTint="@color/ColorRed"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/greenBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@drawable/round_image_green_whiteborder"
+            android:backgroundTint="@color/ColorsGreen"
+            android:visibility="visible" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/blueBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@drawable/round_image_blue_whiteborder"
+            android:backgroundTint="@color/ColorsBlue"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

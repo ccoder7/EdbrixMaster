@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    tools:context=".VizippDrawRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/app_min_margin"
+            android:padding="@dimen/app_normal_padding"
+            android:src="@drawable/arrow_back_grey"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/logo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_normal_padding"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/knowledgebrix_banner"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/ColorGreyTxt"
+            android:textSize="28sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/loginTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@color/appColor"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/glLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_normal_padding"
+                android:text="@string/google_account"
+                android:textColor="@color/ColorGreyTxt"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/schlLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_normal_padding"
+                android:text="@string/school_account"
+                android:textColor="@color/ColorOrangeTxt"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/app_min_margin"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:gravity="center"
+            android:text="@string/login_upgrade_pro_message"
+            android:textColor="@color/MainTextColor"
+            android:textSize="12sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:gravity="center"
+            android:text="@string/create_your_account"
+            android:textAllCaps="true"
+            android:textColor="@color/ColorGreyTxt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+        <!--vikrant.socialwebi@gmail.com-->
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/first_name"
+            android:imeActionId="6"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/last_name"
+            android:imeActionId="6"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/mobile_no"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtConfirmEmail"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/confirm_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/pwdLayout"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin"
+            android:background="@drawable/black_border">
+
+            <EditText
+                android:id="@+id/edtCreatePwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:hint="@string/create_pwd"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/register_vizipp"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="@dimen/app_normal_padding"
+                android:textColor="@color/SubTextColor"
+                android:textColorHint="@color/ColorPlaceHolder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/eyeIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/app_min_padding"
+                android:src="@drawable/eye_invisible" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtCoupon"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/coupon_code"
+            android:imeActionId="6"
+            android:imeActionLabel="@string/register_vizipp"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords"
+            android:visibility="visible"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin">
+
+            <CheckBox
+                android:id="@+id/checkBxAgreed"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/textTrmConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/agree_term_condition"
+                android:textColor="@color/MainTextColor"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnRegister"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/purple_border_background"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:text="@string/sign_up"
+            android:textColor="@color/ColorsWhite"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_normal_padding"
+                android:text="@string/login"
+                android:textColor="@color/ColorGreyTxt"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+
+            <!--
+                        <TextView
+                            android:id="@+id/txtForgotPwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/app_normal_margin"
+                            android:background="@color/ColorsWhite"
+                            android:fontFamily="@string/futura_book_bt_ttf"
+                            android:gravity="center"
+                            android:padding="@dimen/app_normal_padding"
+                            android:text="@string/forgot_password"
+                            android:textColor="@color/ColorGreyTxt"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+            -->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

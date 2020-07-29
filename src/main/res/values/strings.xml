@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">Contentbrix</string>
+
+    <string name="label_permissions">Please enable Microphone and Storage permissions.</string>
+    <string name="label_permissions_storage">Please enable Storage permissions.</string>
+    <string name="permissions">Allow permissions.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="no_video_found">No Video files found</string>
+    <string name="no_recorded_video_found">No recorded video found</string>
+    <string name="record_whiteboard">Whiteboard</string>
+    <string name="adv_record_whiteboard">Advance Whiteboard</string>
+    <string name="record_screen">Record Screen</string>
+    <string name="record_pdf">Presentation</string>
+    <string name="brodcast">Brodcast</string>
+    <string name="save">Save</string>
+    <string name="upload_to_server">Upload To Server</string>
+    <string name="upload">Upload</string>
+    <string name="record">Record</string>
+    <string name="cancel">Cancel</string>
+    <string name="skip_it">Skip It</string>
+    <string name="skip_now">Skip Now</string>
+    <string name="no_thanks">No, Thanks</string>
+    <string name="ok">OK</string>
+    <string name="got_it">OK, Got it</string>
+    <string name="cancel_payment">Cancel Payment</string>
+    <string name="cancel_upload">Cancel Upload</string>
+    <string name="clear">Clear</string>
+    <string name="close">Close</string>
+    <string name="stop">Stop</string>
+    <string name="board_name">Board Name</string>
+    <string name="create_resource">Create Resource</string>
+    <string name="add_to_course">Add To Course</string>
+    <string name="resource_name_blank">Resource name can not be blank.</string>
+    <string name="content_name_blank">Content name can not be blank.</string>
+    <string name="file_name_placeholder">File name (Max 100 characters) </string>
+    <string name="no_internet_msg">No internet connectivity found. Please check settings for internet connectivity.</string>
+    <string name="file_rename_success_msg">File renamed successfully.</string>
+    <string name="file_delete_success_msg">File deleted successfully.</string>
+    <string name="drive">Drive</string>
+    <string name="google_drive">Google Drive</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="not_available">Not available</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="onedrive">Microsoft\nOneDrive</string>
+    <string name="my_files">My Files</string>
+    <string name="no_course_found"> No course is found </string>
+    <string name="no_category_found"> No category is found </string>
+    <string name="content_title">Content Title</string>
+    <string name="course_title">Course Title</string>
+    <string name="class_title">Class Title</string>
+    <string name="my_courses">Courses</string>
+    <string name="diagram">Diagram</string>
+    <string name="drawing">Drawing</string>
+    <string name="math">Math</string>
+    <string name="text_document">Text Document</string>
+    <string name="text">Text</string>
+    <string name="raw">Raw</string>
+    <string name="my_category">Categories</string>
+    <string name="my_classes">My Classes</string>
+    <string name="choose_option_upload_video">Choose option to upload</string>
+    <string name="select_pages">Select Page Type</string>
+    <string name="home">Home</string>
+    <string name="schoolList">Select your School</string>
+    <string name="settings">Settings</string>
+    <string name="powered_by_vizipp_draw">Powered by VizippDraw</string>
+    <string name="email">Email</string>
+    <string name="title">Title</string>
+    <string name="subject">Subject</string>
+    <string name="standard">Standard</string>
+    <string name="board">Board</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="email_username">Email (Username)</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="mobile_no">Mobile</string>
+    <string name="mobile_no_blank">Mobile number can not be blank.</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="password">Password</string>
+    <string name="create_pwd">Create Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up_">Don\'t have an account? <u><b>Sign up</b></u></string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="log_out">Logout</string>
+    <string name="login">Login</string>
+    <string name="create_course">Create Course</string>
+    <string name="create_class">Create Class</string>
+    <string name="digitallib">Digital Library</string>
+    <string name="add_to_myfiles">Add To MyFiles</string>
+    <string name="create">Create</string>
+    <string name="submit">Submit</string>
+    <string name="use">Use</string>
+    <string name="login_with">Login with</string>
+    <string name="google_account">Google Account</string>
+    <string name="school_account">School Account</string>
+    <string name="forgot_password_">Forgot password?</string>
+    <string name="enter_reg_email_id">Please enter your registered email address.</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="upgrade_pro_message">Subscribe Pro account to unlock more features.</string>
+    <string name="login_title_msg">Login with Knowledgebrix to upgrade your plan.</string>
+    <string name="login_upgrade_pro_message">You are on Basic Plan. You can upload max 5 videos. Subscribe to Pro account by paying just $49.99 a year for unlimited videos upload.</string>
+    <string name="enter_new_pass">Please enter new password below.</string>
+    <string name="register">Not an Instructor yet? Register now..!</string>
+    <string name="register_vizipp">Register</string>
+    <string name="signup_here">Sign Up Here.</string>
+    <string name="upload_file_from">Choose option from below to import PDF. </string>
+    <string name="record_screen_text">Choose option to start recording</string>
+    <string name="start_record_video">Start Record Video</string>
+    <string name="record_video">Video</string>
+    <string name="record_presentation">Presentation</string>
+    <string name="recorded_videos">Videos</string>
+    <string name="upload_videos">My Files</string>
+    <string name="my_exports">My Exports</string>
+    <string name="camera_not_found_error">Sorry.. You are not able to record video. Camera not found on this device.</string>
+
+    <!--<string name="DROPBOX_APP_KEY">xcgwr047j7n0hkl</string>-->
+    <string name="DROPBOX_APP_KEY">hco3q31jyc02ftl</string>
+
+    <!--972389293626-8gvk8ohu5gbftpu1d2b0hrvsolt172os.apps.googleusercontent.com-->
+
+    <string name="web_client_id">972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com</string>
+
+    <string name="forgot_password">Reset Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="error">Error</string>
+    <string name="error_message">Something went wrong. Please try again later..!</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="no_pdf_found">No PDF files found</string>
+    <string name="removing_file_">Removing file... </string>
+    <string name="futura_book_bt_ttf">FuturaBookBT.ttf</string>
+    <string name="search">Search</string>
+    <string name="username_blank">Email can not be blank.</string>
+    <string name="invalid_email">Enter valid email.</string>
+    <string name="password_blank">Password can not be blank.</string>
+    <string name="confirm_password_blank">Confirm Password can not be blank.</string>
+    <string name="firstname_blank">First name can not be blank.</string>
+    <string name="lastname_blank">Last name can not be blank.</string>
+    <string name="password_not_match">Both password does not match</string>
+    <string name="password_min_char">Minimum password length is 6 character.</string>
+    <string name="please_accept_terms">Accept the Terms and Condition before Sign Up. </string>
+    <string name="emails_not_match">Both emails are different</string>
+    <string name="use_another_account">Use another account</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="accounts">Accounts</string>
+    <string name="user_account">User Account</string>
+    <string name="other_accounts">Other Accounts</string>
+    <string name="no_file_found">No file found.</string>
+    <string name="app_tour">App Tour</string>
+    <string name="other_settings">Other Settings</string>
+    <string name="vibrate_once_video_start">Vibrate once recording start</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="create_subscription">Create Subscription</string>
+    <string name="upgrade_pro">Upgrade Pro</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="cancel_subscription">Cancel Subscription</string>
+    <string name="update_card_details">Update Card Details</string>
+    <string name="reset_app">Reset App</string>
+    <string name="app_reset_msg">App reset successfully.</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="pay">Pay Now</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="subscribe_me">Subscribe Me</string>
+    <string name="subscribe_now">Subscribe Now</string>
+    <string name="subscription">Subscription</string>
+    <string name="update">Update</string>
+    <string name="continue_text">Continue..</string>
+    <string name="upgrade_later">Upgrade Later</string>
+    <string name="later">Later</string>
+    <string name="upgrade_now">Upgrade Now</string>
+    <string name="select_pdf_file">Select PDF file</string>
+    <string name="update_card_msg">Update your card details.</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="payment_terms_accept">I accept Payment Terms and Conditions.</string>
+    <string name="agree_term_condition">I agree with the Terms and Condition.</string>
+    <!--<string name="upload_limit_about_to_finish_message">Your basic plan\'s upload limit is about to finish.\nSubscribe Pro Account to unlock more features.</string>-->
+    <string name="upload_limit_finished_message">Your basic plan\'s upload limit is over now.\nSubscribe to Pro account by paying just $49.99 a year for unlimited videos upload. </string>
+    <string name="upload_limit_about_to_finish_message">Your Basic plan allows to upload maximum 3 videos.\nSubscribe Pro account to upload unlimited videos.</string>
+    <string name="delete_video_msg">Continue with delete video?</string>
+    <string name="delete_exports_msg">Can we continue with delete?</string>
+    <string name="sign_out_continue_msg">Can we continue with logout?</string><!--Continue with Logout?-->
+    <string name="cancel_subscription_continue_msg">Continue with Cancel Subscription?\n This action can not be undone.</string>
+    <string name="dropbox_remove_continue_msg">Continue with remove Dropbox account?</string>
+    <string name="google_drive_remove_continue_msg">Continue with remove Google Drive account?</string>
+    <string name="edbrix_remove_continue_msg">Continue with remove My Files account?</string>
+    <string name="payment_info">*You’ll be charged $49.99 yearly until you cancel your subscription.
+        Previous charges won’t be refunded when you cancel unless it’s legally required.
+        Your payment data is encrypted and secure. All amounts shown are in USD.
+</string>
+
+    <string name="not_recorded_video_yet">You have not recorded any video yet.</string>
+    <string name="start_your_recording"> </string>
+
+
+    <string name="menu_inputMode">Input mode</string>
+    <string name="menu_undo">Undo</string>
+    <string name="menu_redo">Redo</string>
+    <string name="menu_clear">Clear</string>
+    <string name="menu_convert">Convert</string>
+    <string name="menu_newPackage">New...</string>
+    <string name="menu_openPackage">Open...</string>
+    <string name="menu_savePackage">Save</string>
+    <string name="menu_export">Export</string>
+    <string name="menu_newPart">New part...</string>
+    <string name="menu_previousPart">Previous part</string>
+    <string name="menu_nextPart">Next part</string>
+    <string name="menu_resetView">Reset view</string>
+    <string name="menu_zoomIn">Zoom in</string>
+    <string name="menu_zoomOut">Zoom out</string>
+
+    <string name="newPackage_title">New package - enter file name</string>
+    <string name="openPackage_title">Open package - select file</string>
+    <string name="newPart_title">New part - select type</string>
+    <string name="exportType_title">Export - select type</string>
+    <string name="exportPackage_title">Export - select file</string>
+    <string name="addImage_title">Add image - select file</string>
+    <string name="addType_title">Add block - select type</string>
+    <string name="addData_title">Add block - enter data</string>
+    <string name="inputMode_title">Input mode - select behavior</string>
+    <string name="inputMode_forcePen">Pen</string>
+    <string name="inputMode_forceTouch">Touch</string>
+    <string name="inputMode_auto">Auto</string>
+    <string name="inputMode_erase">Erase</string>
+
+    <string name="add_page">Add Page</string>
+    <string name="change_order">Change Order</string>
+    <string name="finish">Finish</string>
+    <string name="done">Done</string>
+
+    <string name="app_id">A65B6E44</string>
+    <string name="new_user_register">New User? Register</string>
+
+    <string name="agora_app_id">3f07a97f774a42c88ea526f99e508373</string>
+    <string name="agora_app_certificate">d120da6c88de4090b273d60a04bd7adb</string>
+    <string name="agora_access_token">0063f07a97f774a42c88ea526f99e508373IABS6rb3dRjeBkFViopdvl697eA3guyaELOrVWAU87HWQ5pjTicAAAAAEABALfxI1B8AXwEAAQDDHwBf</string>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <!-- Live Activity -->
+    <string name="fake_user_name" translatable="false">Shakespeare</string>
+
+</resources>

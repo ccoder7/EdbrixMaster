@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".UpdateCardDetailActivity">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/app_big_margin"
+        android:background="@color/ColorsWhite"
+        android:orientation="vertical"
+        android:padding="@dimen/app_big_padding">
+
+        <ImageView
+            android:id="@+id/logo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/app_min_padding"
+            android:layout_marginTop="@dimen/app_min_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/knowledgebrix_banner"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:gravity="center"
+            android:text="@string/update_card_msg"
+            android:textColor="@color/ColorGreyTxt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/card_input_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:padding="@dimen/app_normal_padding"
+            app:cardTextErrorColor="@android:color/holo_red_dark"
+            app:cardTint="@color/ColorLogo" />
+
+        <EditText
+            android:id="@+id/cardDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:background="@drawable/grey_border"
+            android:hint="@string/card_holder_name"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/app_min_margin"
+                    android:layout_toStartOf="@+id/stripe_logo"
+                    android:text="Powered by "
+                    android:textColor="@color/MainTextColor"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/stripe_logo"
+                    android:layout_width="72dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/stripe_logo" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="255dp"
+                android:layout_height="36dp"
+                android:src="@drawable/payment_card"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:background="@color/SubTextColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:textColor="@color/MainTextColor"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_normal_margin"
+            android:background="@color/ColorLogo"
+            android:padding="@dimen/app_min_padding"
+            android:text="@string/update"
+            android:textColor="@color/ColorsWhite"
+            android:textSize="18sp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@null"
+            android:padding="@dimen/app_min_padding"
+            android:text="@string/cancel"
+            android:textColor="@color/ColorLogo"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>

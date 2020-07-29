@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnOK" />
+
+    <TextView
+        android:id="@+id/btnOK"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/app_normal_margin"
+        android:background="@color/ColorLogo"
+        android:padding="@dimen/app_min_padding"
+        android:textStyle="bold"
+        android:text="@string/close"
+        android:textColor="@color/ColorsWhite" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addNewPage"
+        android:title="@string/add_page"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/startMenu"
+        android:title="@string/change_order"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/finishMenu"
+        android:title="@string/finish"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/doneMenu"
+        android:title="@string/done"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/digramRecogBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@drawable/figures"
+            android:visibility="visible" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/mathRecogBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@drawable/blackboard"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

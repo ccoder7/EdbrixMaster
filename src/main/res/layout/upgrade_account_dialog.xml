@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/ColorsWhite"
+        android:layout_margin="@dimen/app_normal_margin"
+        android:padding="@dimen/app_min_padding">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:padding="@dimen/app_normal_padding"
+            android:src="@drawable/color_wallet" />
+
+        <TextView
+            android:id="@+id/dialogTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_min_padding"
+            android:textColor="@color/MainTextColor"
+            android:textSize="20sp"
+            android:text="@string/upgrade_pro"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dialogMsgText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/app_min_padding"
+            android:text="@string/upload_limit_finished_message"
+            android:textColor="@color/SubTextColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="@dimen/app_min_margin"
+            android:background="@color/SubTextColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/app_min_margin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="@dimen/ui_element_gap"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/ColorLogo"
+                android:visibility="visible"
+                android:textSize="15sp" />
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btnOK"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="@dimen/ui_element_gap"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/upgrade_now"
+                android:textColor="@color/ColorLogo"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

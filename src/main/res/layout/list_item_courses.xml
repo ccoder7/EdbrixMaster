@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorActionBar"
+    android:padding="@dimen/app_normal_padding"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_min_margin"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <com.edbrix.contentbrix.customview.RoundedImageView
+            android:id="@+id/imgCourseBy"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="@dimen/app_min_padding"
+            android:src="@drawable/my_files_icons" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/app_min_margin"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:text="Mathematic"
+            android:textColor="@color/appColor"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txtCourseDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:text="desc"
+            android:textColor="@color/MainTextColor"
+            android:textSize="16sp"
+            android:typeface="monospace"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btnGoDetail"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:src="@drawable/right_arrow"
+            android:layout_marginTop="@dimen/app_min_margin" />
+
+    </LinearLayout>-->
+</LinearLayout>

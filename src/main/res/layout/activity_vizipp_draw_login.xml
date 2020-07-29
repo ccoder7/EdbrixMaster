@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    tools:context=".VizippDrawLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="@dimen/margin_20">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/app_min_margin"
+            android:padding="@dimen/app_normal_padding"
+            android:src="@drawable/arrow_back_grey"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/logo_title"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/knowledgebrix_banner"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/app_min_margin"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:text="@string/login_upgrade_pro_message"
+            android:textColor="@color/MainTextColor"
+            android:textSize="12sp"
+            android:typeface="serif"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:gravity="center"
+            android:text="@string/login_title_msg"
+            android:textAllCaps="false"
+            android:textColor="@color/MainTextColor"
+            android:textSize="12sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/loginTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@color/appColor"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/glLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_normal_padding"
+                android:text="@string/google_account"
+                android:textColor="@color/ColorGreyTxt"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/schlLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_normal_padding"
+                android:text="@string/school_account"
+                android:textColor="@color/ColorOrangeTxt"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+        <!--vikrant.socialwebi@gmail.com-->
+<!--
+        <EditText
+            android:id="@+id/edtPwd"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/password"
+            android:imeActionId="6"
+            android:imeActionLabel="@string/login"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+-->
+
+        <LinearLayout
+            android:id="@+id/pwdLayout"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin">
+
+            <EditText
+                android:id="@+id/edtPwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:hint="@string/password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/login"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="@dimen/app_min_padding"
+                android:textColor="@color/SubTextColor"
+                android:textColorHint="@color/ColorPlaceHolder"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/eyeIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/app_min_padding"
+                android:src="@drawable/eye_invisible" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+        </RelativeLayout>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnLogin"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin"
+            android:background="@drawable/purple_border_background"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:text="@string/login"
+            android:textColor="@color/ColorsWhite"
+            android:textSize="22sp" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_min_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_min_margin"/>
+
+        <RelativeLayout
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_normal_padding"
+                android:text="@string/sign_up"
+                android:textColor="@color/ColorGreyTxt"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/txtChangePwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/app_normal_margin"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_min_padding"
+                android:text="@string/change_password"
+                android:textColor="@color/ColorGreyTxt"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtForgotPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:padding="@dimen/app_min_padding"
+                android:text="@string/forgot_password_"
+                android:textColor="@color/MainTextColor"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/signUpLayout"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_5"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:text="@string/dont_have_an_account"
+                android:textColor="@color/ColorGreyTxt"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/app_min_margin"
+                android:layout_marginStart="@dimen/app_min_margin"
+                android:background="@color/ColorsWhite"
+                android:fontFamily="@string/futura_book_bt_ttf"
+                android:gravity="center"
+                android:text="@string/new_user_register"
+                android:textColor="@color/MainTextColor"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

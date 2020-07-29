@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:text="Confirmation"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dig_txtconformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:text="confirm"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dig_edtContentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/content_title"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/MainTextColor"
+            android:textColorHint="@color/SubTextColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dig_edtContentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="Content Description"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/MainTextColor"
+            android:textColorHint="@color/SubTextColor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCreateCourseContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@color/ColorLogo"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:padding="@dimen/app_min_padding"
+            android:text="@string/create"
+            android:textAllCaps="false"
+            android:textColor="@color/ColorsWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</ScrollView>

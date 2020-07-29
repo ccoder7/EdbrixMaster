@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/circleShapeBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_min_margin"
+        android:background="@drawable/circle"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/rectShapeBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_min_margin"
+        android:background="@drawable/rect_black"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/squareShapeBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_min_margin"
+        android:background="@drawable/square_black"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/triangleShapeBtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_min_margin"
+        android:background="@drawable/triangle"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+</LinearLayout>

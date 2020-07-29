@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:layout_weight="0.8"
+            android:text="Select your School"
+            android:textAlignment="viewStart"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/button_Close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_weight="0.2"
+            android:clickable="true"
+            android:padding="2dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/ic_close_black_24dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/custom_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        tools:listitem="@layout/organisation_name_item" />
+
+</LinearLayout>

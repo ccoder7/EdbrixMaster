@@ -1,0 +1,175 @@
+{
+  "project_info": {
+    "project_number": "972389293626",
+    "firebase_url": "https://edbrix-school.firebaseio.com",
+    "project_id": "edbrix-school",
+    "storage_bucket": "edbrix-school.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972389293626:android:70bed433b8d3bdab",
+        "android_client_info": {
+          "package_name": "com.edbrix.contentbrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972389293626-2g8qltilritu3jdh0tjnafdfgbs1aukm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edbrix.contentbrix",
+            "certificate_hash": "5ca534f5e263cd68033d6975ddfa1260d9cceefe"
+          }
+        },
+        {
+          "client_id": "972389293626-8gvk8ohu5gbftpu1d2b0hrvsolt172os.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edbrix.contentbrix",
+            "certificate_hash": "147695b20b1904fd71715370cb11bd0db40eba89"
+          }
+        },
+        {
+          "client_id": "972389293626-g76p50s3lv8ghvc1dr9lvlse1lgd4nab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edbrix.contentbrix",
+            "certificate_hash": "04822552ddf1c138ab63d9c1f30581030cdc72d7"
+          }
+        },
+        {
+          "client_id": "972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcF9f2U7QVqHeEk_bXMDH4fMefaHrwaQk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972389293626:android:a3dca2de7235b0c4",
+        "android_client_info": {
+          "package_name": "com.edbrix.knowledgebrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972389293626-jg4i5lrnbjjn7lj690amk583lr5473u1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edbrix.knowledgebrix",
+            "certificate_hash": "5ca534f5e263cd68033d6975ddfa1260d9cceefe"
+          }
+        },
+        {
+          "client_id": "972389293626-el9fohcjkv5imgkrmotevbh3b5hm923h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edbrix.knowledgebrix",
+            "certificate_hash": "155ba8548def9856e6120a9c79a775d00f1acd52"
+          }
+        },
+        {
+          "client_id": "972389293626-00u7mde1dutfkn5ada1lp0ftcabilmj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edbrix.knowledgebrix",
+            "certificate_hash": "f9141e2d0ec5cddf3046465f898f66b421c058ca"
+          }
+        },
+        {
+          "client_id": "972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcF9f2U7QVqHeEk_bXMDH4fMefaHrwaQk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972389293626:android:c19d05f5b2392658",
+        "android_client_info": {
+          "package_name": "com.knowledgebrix.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972389293626-qg0plmb6ef000csa0844pnijb7ei9cde.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knowledgebrix.app",
+            "certificate_hash": "5ca534f5e263cd68033d6975ddfa1260d9cceefe"
+          }
+        },
+        {
+          "client_id": "972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcF9f2U7QVqHeEk_bXMDH4fMefaHrwaQk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972389293626-1fv1d9apje1k5a1patmkrverp13b6o4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

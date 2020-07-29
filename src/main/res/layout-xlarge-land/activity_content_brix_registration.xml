@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorsWhite"
+    tools:context=".VizippDrawRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo_title"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/app_normal_padding"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/knowledgebrix_banner"
+            android:visibility="visible" />
+
+        <!--vikrant.socialwebi@gmail.com-->
+        <EditText
+            android:id="@+id/edtSchoolCode"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="School Code"
+            android:imeOptions="actionNext"
+            android:longClickable="false"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtFirstName"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/first_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtLastName"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/last_name"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/black_border"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:hint="@string/mobile_no"
+            android:inputType="phone"
+            android:padding="@dimen/app_normal_padding"
+            android:textColor="@color/SubTextColor"
+            android:textColorHint="@color/ColorPlaceHolder"
+            android:textSize="15sp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnRegister"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/app_normal_margin"
+            android:layout_marginLeft="@dimen/app_big_margin"
+            android:layout_marginRight="@dimen/app_big_margin"
+            android:layout_marginTop="@dimen/app_normal_margin"
+            android:background="@drawable/purple_border_background"
+            android:fontFamily="@string/futura_book_bt_ttf"
+            android:text="Register"
+            android:textColor="@color/ColorsWhite"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewLogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="Login"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

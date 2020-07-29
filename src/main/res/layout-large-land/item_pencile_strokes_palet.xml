@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/smallPencilSizeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_normal_margin"
+        android:background="@drawable/pencil_small"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/mediumPencilSizeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_normal_margin"
+        android:background="@drawable/pencil_medium"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/largePencilSizeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/app_normal_margin"
+        android:background="@drawable/pencil_large"
+        android:padding="15dp"
+        android:visibility="visible" />
+
+
+</LinearLayout>
